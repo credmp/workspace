@@ -41,8 +41,8 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec kitty
-bindsym $mod+t exec kitty
+bindsym $mod+Return exec terminator
+bindsym $mod+t exec terminator
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -206,6 +206,8 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
+new_window none
+
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -301,6 +303,7 @@ bindsym $mod+Shift+plus  gaps outer all plus  5
 bindsym $mod+d exec rofi -show run 
 
 bindsym $mod+shift+x exec i3lock-fancy -f roboto 
+bindsym $mod+p exec mons -n left
 
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
@@ -323,7 +326,7 @@ bindsym XF86AudioPrev exec playerctl previous
 # Fix screen layout
 #
 exec --no-startup-id ~/.config/i3/layout.sh
-# exec --no-startup-id ~/.local/bin/enact --pos left --watch
+exec --no-startup-id mons -a
 
 exec compton
 

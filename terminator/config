@@ -1,0 +1,42 @@
+[global_config]
+  borderless = True
+  enabled_plugins = TerminatorThemes, LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  extra_styling = False
+  homogeneous_tabbar = False
+  scroll_tabbar = True
+  tab_position = hidden
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 863c7df8-4d8f-4296-b683-32f515fee038
+      last_active_window = True
+      maximised = False
+      order = 0
+      parent = ""
+      position = 10:41
+      size = 945, 1029
+      title = arjen@ninja: ~
+      type = Window
+    [[[terminal1]]]
+      order = 0
+      parent = child0
+      profile = Juicy
+      type = Terminal
+      uuid = 863c7df8-4d8f-4296-b683-32f515fee038
+[plugins]
+[profiles]
+  [[default]]
+    cursor_color = "#aaaaaa"
+    font = Hack 16
+    show_titlebar = False
+    use_system_font = False
+  [[Juicy]]
+    background_color = "#212121"
+    cursor_color = "#fcfcfc"
+    font = Hack 16
+    foreground_color = "#fcfcfc"
+    palette = "#2e3436:#ff0945:#1aff81:#fff64a:#2bf1ff:#7b68ee:#98f4ff:#d3d7cf:#555753:#ff0945:#1aff81:#fff64a:#2bf1ff:#7b68ee:#98f4ff:#eeeeec"
+    show_titlebar = False
+    use_system_font = False
