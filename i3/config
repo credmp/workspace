@@ -322,6 +322,9 @@ bindsym XF86AudioPrev exec playerctl previous
 # Startup programs
 #
 
+# File synchronisation
+exec stack --background
+
 #
 # Fix screen layout
 #

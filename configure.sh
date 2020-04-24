@@ -40,3 +40,16 @@ ln -s ~/.local/kitty.app/bin/kitty ~/.local/bin/kitty
 pip install requests
 mkdir -p ~/.config/terminator/plugins
 curl https://github.com/EliverLara/terminator-themes/raw/master/plugin/terminator-themes.py -o ~/.config/terminator/plugins/terminator-themes.py
+
+#
+# Fonts
+#
+mkdir font &&
+    cd font &&
+    wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip &&
+    unzip Hack.zip &&
+    mkdir -p ~/.local/share/fonts &&
+    mv *.ttf ~/.local/share/fonts &&
+    fc-cache -f ~/.local/share/fonts &&
+    cd .. &&
+    rm -r font
