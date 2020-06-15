@@ -1,0 +1,12 @@
+[stack]
+type = webdav
+url = https://user.stackstorage.com/remote.php/webdav/
+vendor = other
+user = 
+pass = 
+
+[IODD]
+type = local
+nounc = true
+copy_links = true
+links = false
