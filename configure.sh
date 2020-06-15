@@ -9,7 +9,7 @@ echo "Configuring this system for i3/polybar workspace"
 sudo add-apt-repository ppa:kgilmer/speed-ricer
 sudo apt-get update
 
-sudo apt install -y i3-gaps i3lock-fancy polybar terminator tmux roboto rxvt-unicode xsel fonts-fantasque-sans arandr help2man fonts-materialdesignicons-webfont brightnessctl
+sudo apt install -y i3-gaps i3lock-fancy polybar terminator tmux fonts-roboto rxvt-unicode xsel fonts-fantasque-sans arandr help2man fonts-materialdesignicons-webfont brightnessctl rofi
 
 #
 # Linking configuration directories
