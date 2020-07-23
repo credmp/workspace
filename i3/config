@@ -335,7 +335,9 @@ exec compton
 #
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id stack --background
 
-exec_always feh --bg-scale ~/Pictures/video\ games\ city\ high\ wallpapers.jpg
+# exec_always feh --bg-scale ~/Pictures/video\ games\ city\ high\ wallpapers.jpg
+exec_always dwall -s firewatch
 #exec_always feh --bg-scale ~/Pictures/water-mountains.jpg
 exec xinput map-to-output 10 HDMI-0
