@@ -338,6 +338,7 @@ exec compton
 #
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id stack --background
 
 #exec_always feh --bg-scale ~/Pictures/wallpaper.jpg
 #exec_always feh --bg-scale ~/Pictures/water-mountains.jpg
