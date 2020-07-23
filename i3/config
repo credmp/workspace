@@ -302,7 +302,7 @@ bindsym $mod+Shift+plus  gaps outer all plus  5
 #bindsym $mod+d exec rofi -show run -lines 5 -eh 2 -width 100 -padding 500 -opacity "80" -bw 0 -bc "$base01" -bg "$base02" -fg "$base07" -hlbg "$base05" -font "Roboto 18" -hlfg "#9575cd"
 bindsym $mod+d exec rofi -show run 
 
-bindsym $mod+shift+x exec i3lock-fancy -f roboto 
+bindsym $mod+shift+x exec ~/.config/i3/lock-screen.sh
 bindsym $mod+p exec mons -n left
 
 # Sreen brightness controls
@@ -342,4 +342,5 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 #exec_always feh --bg-scale ~/Pictures/wallpaper.jpg
 #exec_always feh --bg-scale ~/Pictures/water-mountains.jpg
 exec_always dwall -s maldives
+exec redshift
 #exec xinput map-to-output 10 HDMI-0
